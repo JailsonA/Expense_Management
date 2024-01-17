@@ -8,5 +8,10 @@ namespace DAL_ExpenseManagement.Models
 {
     public class Category
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; } // Income or Expense
+
+        public List<Expense> Expenses { get; set; }
     }
 }
