@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL_ExpenseManagement.Data.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace DAL_ExpenseManagement.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Type { get; set; } // Income or Expense
+        public CategoryEnum Type { get; set; } // Income or Expense
 
         public List<Expense> Expenses { get; set; }
     }

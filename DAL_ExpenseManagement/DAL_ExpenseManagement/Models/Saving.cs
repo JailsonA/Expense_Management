@@ -10,7 +10,7 @@ namespace DAL_ExpenseManagement.Models
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public decimal Goal { get; set; }
+        public float Goal { get; set; }
 
         public User User { get; set; }
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using DAL_ExpenseManagement.Data.Enum;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace DAL_ExpenseManagement.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public bool status { get; set; }
-        public string Role { get; set; }
+        public RolEnum Role { get; set; }
 
         public List<Income> Incomes { get; set; }
         public List<Expense> Expenses { get; set; }
